@@ -70,7 +70,7 @@ response = requests.get(
     params={
         "query": "https://www.imoveisweb.com.br/imoveis/casas/3151/",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -203,7 +203,7 @@ response = requests.get(
     params={
         "query": "casas",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
